@@ -29,7 +29,7 @@ def open_card_details():
         entries.append(entry)
 
     # Define the Submit Button
-    submit_button = tk.Button(form_frame, text="Submit", font=("Arial", 14))
+    submit_button = tk.Button(form_frame, text="Save", font=("Arial", 14))
     submit_button.grid(row=len(labels), column=0, columnspan=2, pady=10)
 
     # Make columns responsive

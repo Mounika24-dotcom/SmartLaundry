@@ -58,7 +58,7 @@ login_button.grid(row=3, column=0, columnspan=2, pady=(20, 10))
 new_user_label = tk.Label(main_frame, text="Not registered? Create an account below.", font=("Arial", 12))
 new_user_label.grid(row=4, column=0, columnspan=2, pady=(10, 5))
 
-sign_in_button = tk.Button(main_frame, text="Sign In", font=("Arial", 14), command=lambda: open_sign_in(root))
+sign_in_button = tk.Button(main_frame, text="Sign Up", font=("Arial", 14), command=lambda: open_sign_in(root))
 sign_in_button.grid(row=5, column=0, columnspan=2, pady=(5, 20))
 
 # Make columns and rows responsive

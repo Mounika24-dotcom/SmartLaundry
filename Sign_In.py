@@ -5,7 +5,7 @@ from tkinter import messagebox
 def open_sign_in(root):
     # Create a new Toplevel window for sign-in
     sign_in_window = tk.Toplevel(root)
-    sign_in_window.title("Sign In Page")
+    sign_in_window.title("Sign Up Page")
 
     # Set the window to start maximized for Windows
     #sign_in_window.state("zoomed")
@@ -46,7 +46,7 @@ def open_sign_in(root):
         first_name = entries["First Name"].get()
         last_name = entries["Last Name"].get()
         phone_number = entries["Phone Number"].get()
-        email_id = entries["Email Id"].get()
+        email_id = entries["Email address"].get()
         user_id = entries["User Id"].get()
         password = entries["Password"].get()
         confirm_password = entries["Confirm Password"].get()
