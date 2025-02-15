@@ -1,5 +1,3 @@
-Here is a README file for your **Smart Laundry Management System** project:  
-
 ---
 
 # Smart Laundry Management System  
