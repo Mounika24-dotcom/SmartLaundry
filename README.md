@@ -35,13 +35,4 @@ The **Smart Laundry Management System** is a web-based application designed to o
 - Reduced idle machine time through **penalty enforcement**  
 - A seamless **payment and notification** system to enhance user experience  
 
-## Installation & Setup  
-### Prerequisites  
-- **Python** (Flask)  
-- **MySQL** for database storage   
-
-
-   ```  
- 
-
 ---
