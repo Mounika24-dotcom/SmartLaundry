@@ -73,7 +73,7 @@ def fetch_reservation_from_db():
     except Exception as e:
         messagebox.showerror("Error", f"Failed to fetch reservations: {str(e)}")
 
-def save_reservation_to_db(day, user_id, machine_id=None):
+def save_reservation_to_db(day, user_id):
     """Save a reservation to the database."""
     try:
         connection = mysql.connector.connect(**DB_CONFIG)
@@ -81,8 +81,8 @@ def save_reservation_to_db(day, user_id, machine_id=None):
 
         reservation_date = date.today() if day == "Today" else date.today() + timedelta(days=1)
 
-        query = "INSERT INTO Reservation (User_ID, Date, Machine_ID) VALUES (%s, %s, %s)"
-        cursor.execute(query, (user_id, reservation_date, machine_id))
+        query = "INSERT INTO Reservation (User_ID, Date) VALUES (%s, %s)"
+        cursor.execute(query, (user_id, reservation_date))
         connection.commit()
 
         reservation_id = cursor.lastrowid
